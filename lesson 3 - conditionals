@@ -1,0 +1,134 @@
+Quiz 2
+
+/*
+ * Write an if...else statement that prints `even` if the 
+ * number is even and prints `odd` if the number is odd.
+ */
+
+var number = 2;
+
+if (number % 2 === 0) {
+    console.log("even")
+} else {
+    console.log("odd")
+}
+
+Quiz 3
+
+/*
+ * Programming Quiz: Musical Groups (3-3)
+ */
+
+var musicians = 5;
+
+if (musicians < 1) {
+    console.log("not a group");
+} 
+else if (musicians === 1) {
+    console.log("solo");
+} 
+else if (musicians === 2) {
+    console.log("duet");
+} 
+else if (musicians === 3) {
+    console.log("trio");
+} 
+else if (musicians === 4) {
+    console.log("quartet");
+} 
+else {
+    console.log("this is a large group")
+}
+    
+Quiz 4
+
+/*
+ * Programming Quiz: Murder Mystery (3-4)
+ */
+
+var room = "dining room";
+var suspect = "Mr. Parkes";
+
+var weapon = "";
+var solved = false;
+
+if (room === "dining room") {
+    weapon = "knife";
+    if (suspect === "Mr. Parkes") {
+        solved = true;
+    }
+    
+} else if (room === "gallery") {
+    weapon = "trophy";
+    if (suspect === "Ms. Van Cleve") {
+        solved = true;
+    }
+
+} else if (room === "billiards room") {
+    weapon = "pool stick"; 
+    if (suspect === "Mrs. Sparr") {
+        solved = true;
+    }
+
+} else { 
+    weapon = "poison";
+    solved = true;
+ }   
+
+if (solved) {
+	console.log(suspect + " did it in the " + room + " with the " + weapon +"!");
+}
+
+Quiz 5
+/*
+ * Programming Quiz - Checking Your Balance (3-5)
+ */
+
+// change the values of `balance`, `checkBalance`, and `isActive` to test your code
+var balance = 325.00;
+var checkBalance = true;
+var isActive = false;
+
+if (checkBalance === true) {
+  console.log("Thank you have a nice day!");
+}
+else {
+  if (balance > 0 && isActive === true)
+    console.log("Your balance is $" + balance.toFixed(2)+".");
+    else if (isActive === false){
+      console.log("Your account is no longer active."); 
+    }else if (balance === 0){
+      console.log("Your account is empty")
+    }else {
+     console.log("Your balance is negative, please contact bank.");
+    }
+}
+
+Quiz 6
+
+/*
+ * Programming Quiz: Ice Cream (3-6)
+ *
+ * Write a single if statement that logs out the message:
+ * 
+ * "I'd like two scoops of __________ ice cream in a __________ with __________."
+ * 
+ * ...only if:
+ *   - flavor is "vanilla" or "chocolate"
+ *   - vessel is "cone" or "bowl"
+ *   - toppings is "sprinkles" or "peanuts"
+ *
+ * We're only testing the if statement and your boolean operators. 
+ * It's okay if the output string doesn't match exactly.
+ */
+
+// change the values of `flavor`, `vessel`, and `toppings` to test your code
+var flavor = "strawberry";
+var vessel = "cone";
+var toppings = "cookies";
+
+// Add your code here
+
+if ((flavor === "vanilla" || flavor === "chocolate") && (vessel === "cone" || vessel === "bowl") && (toppings === "sprinkles" || toppings === "peanuts")) {
+    console.log("I'd like two scoops of " + flavor + " ice cream in a " + vessel + " with " + toppings +".")
+}
